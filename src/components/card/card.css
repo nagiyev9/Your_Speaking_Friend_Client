@@ -1,0 +1,55 @@
+.custom-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.custom-card.bg-success {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+}
+
+.custom-card.bg-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.custom-card.bg-secondary {
+  background: linear-gradient(135deg, #6c757d, #5a6268);
+  color: white;
+}
+
+.custom-card .card-body {
+  padding: 1.5rem;
+}
+
+.custom-card .card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.custom-card .card-text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.custom-card-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.custom-card-footer:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.custom-card-footer i {
+  margin-left: 8px;
+}
