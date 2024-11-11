@@ -8,6 +8,7 @@ import { jwtDecode } from "jwt-decode";
 import ConfirmSignup from "./pages/ConfirmSignup";
 import ForgotPassword from "./components/forgot password/ForgotPassword";
 import UpdatePassword from "./components/forgot password/UpdatePassword";
+import Error from "./pages/Error";
 
 function App() {
   const token = localStorage.getItem("token");
@@ -36,6 +37,7 @@ function App() {
           path="/admin/datas"
           element={userRole === "admin" ? <Dashboard /> : <Navigate to="/" />}
         />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
