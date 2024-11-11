@@ -82,8 +82,10 @@ const Home = () => {
                 <strong>🗣️ Idioms & Expressions:</strong> Speak naturally with
                 new expressions.
               </li>
-              <strong>💛 Supportive Community:</strong> A fun, relaxed, and
-              motivating environment to learn in.
+              <li>
+                <strong>💛 Supportive Community:</strong> A fun, relaxed, and
+                motivating environment to learn in.
+              </li>
             </ul>
           </section>
 
