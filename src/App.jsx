@@ -36,7 +36,6 @@ function App() {
           path="/admin/datas"
           element={userRole === "admin" ? <Dashboard /> : <Navigate to="/" />}
         />
-        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
